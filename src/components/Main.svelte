@@ -40,7 +40,7 @@
             </button>
         </div>
         <div class="relative shadow-2xl grid place-items-center">
-            <img src="src/lib/images/barry_may_person_shaped.png" alt="Barry May" class="object-cover z-[2] max-h-[70vh]" />
+            <img src="public/images/images/barry_may_person_shaped.png" alt="Barry May" class="object-cover z-[2] max-h-[70vh]" />
         </div>
 
     </section>
