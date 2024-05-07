@@ -22,6 +22,7 @@
                 "I am deeply committed to ongoing learning and progression in my programming career. I am always looking to learn new technologies and improve my skills.",
         },
     ];
+    const API_KEY = "AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
     let name = '';
     let email = '';
     let message = '';
@@ -154,7 +155,7 @@
     <section id="contact" class="relative">
         <div class="container px-5 py-10 mx-auto flex sm:flex-nowrap flex-wrap mb-10px">
             <div class="lg:w-2/3 md:w-1/2 bg-gray-900 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
-                <iframe width="100%" height="100%" title="map" class="absolute inset-0" src="https://www.google.com/maps/embed/v1/place?q=high+wycombe&amp;key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8" style="filter: opacity(0.7);"></iframe>
+                <iframe width="100%" height="100%" title="map" class="absolute inset-0" src={`https://www.google.com/maps/embed/v1/place?q=high+wycombe&key=${API_KEY}`} style="filter: opacity(0.7);"></iframe>
             </div>
             <form name="contact" class="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0" on:submit={handleSubmit}>
                 <h2 class="text-white sm:text-4xl text-3xl mb-1 font-medium title-font">Contact Me</h2>
@@ -169,7 +170,7 @@
                 </div>
                 <div class="relative mb-4">
                     <label for="message" class="leading-7 text-sm text-gray-400">Message</label>
-                    <textarea id="message" bind:value={message} name="message" class="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                    <textarea id="message" bind:value={name} name="message" class="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
                 </div>
                 <button type="submit" id="contact_form_submission" class="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Submit</button>
             </form>
